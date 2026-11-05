@@ -11,7 +11,7 @@ const getSum = () => {
 		})
 	let row=document.createElement("tr");
 	let data=document.createElement("td");
-	data.textContent=totalAmount
+	data.textContent=totalAmount;
 	row.appendChild(data);
 	let table=document.querySelector("table");
 	table.appendChild(row);
