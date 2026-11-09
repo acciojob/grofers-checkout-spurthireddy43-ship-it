@@ -1,3 +1,4 @@
+
 const getSumBtn = document.createElement("button");
 
 getSumBtn.append("Get Total Price");
@@ -5,7 +6,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 
-    const itemPrice = document.querySelectorAll(".price");
+    const itemPrice = document.querySelectorAll(".prices");
 
     let totalAmount = 0;
 
@@ -26,4 +27,8 @@ const getSum = () => {
     table.appendChild(row);
 };
 
+// Calculate automatically when the page loads
+getSum();
+
+// Calculate again when the button is clicked
 getSumBtn.addEventListener("click", getSum);
