@@ -13,15 +13,15 @@ const getSum = () => {
         totalAmount += Number(item.innerText);
     });
 
-    let row = document.createElement("tr");
+    const row = document.createElement("tr");
 
-    let data = document.createElement("td");
+    const data = document.createElement("td");
 
     data.innerText = totalAmount;
 
     row.appendChild(data);
 
-    let table = document.querySelector("table");
+    const table = document.querySelector("table");
 
     table.appendChild(row);
 };
