@@ -7,11 +7,11 @@ const getSum = () => {
   		const itemPrice=document.querySelectorAll(".price")
 		let totalAmount=0
 		itemsPrice.forEach((item)=>{
-			totalAmount+=Number(item.textContent)
+			totalAmount+=Number(item.innerText)
 		})
 	let row=document.createElement("tr");
 	let data=document.createElement("td");
-	data.textContent=totalAmount;
+	data.innerText=totalAmount;
 	row.appendChild(data);
 	let table=document.querySelector("table");
 	table.appendChild(row);
